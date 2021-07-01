@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6f089ab-6081-4d79-9b1f-9ef9a44346b6" name="Default Changelist" comment="">
+    <list default="true" id="a6f089ab-6081-4d79-9b1f-9ef9a44346b6" name="Default Changelist" comment="Klassen deck har Attributtet cards, og en metode for å generere en bunke med kort, toString for å holde oversikt på hvor mange kort som blir generert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Deck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,25 +51,33 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1625165006120</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Deklarert attributter for klassen Card">
+      <created>1625169744121</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1625169744121</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Opprettelse av klassen Card" />
-    <option name="LAST_COMMIT_MESSAGE" value="Opprettelse av klassen Card" />
+    <MESSAGE value="Deklarert attributter for klassen Card" />
+    <MESSAGE value="Klassen deck har Attributtet cards, og en metode for å generere en bunke med kort, toString for å holde oversikt på hvor mange kort som blir generert" />
+    <option name="LAST_COMMIT_MESSAGE" value="Klassen deck har Attributtet cards, og en metode for å generere en bunke med kort, toString for å holde oversikt på hvor mange kort som blir generert" />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1625164757045">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="407" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.834@0.0.1536.834" timestamp="1625164757045" />
-    <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1625169440367">
+    <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1625171016106">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1625169440367" />
-    <state x="410" y="11" key="CommitChangelistDialog2" timestamp="1625165004908">
+    <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1625171016106" />
+    <state x="36" y="23" key="CommitChangelistDialog2" timestamp="1625171657052">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="410" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1625165004908" />
+    <state x="36" y="23" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1625171657052" />
   </component>
 </project>
