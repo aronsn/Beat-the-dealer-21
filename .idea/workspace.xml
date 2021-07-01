@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f089ab-6081-4d79-9b1f-9ef9a44346b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Blackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Suit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Values.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,6 +15,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -21,6 +23,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1uj011YAuqGM0cluiyQvxDFlXca" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -41,12 +46,27 @@
       <option name="presentableId" value="Default" />
       <updated>1625163471874</updated>
     </task>
+    <task id="LOCAL−00001" summary="Opprettelse av klassen Card">
+      <created>1625165006120</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1625165006120</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Opprettelse av klassen Card" />
+    <option name="LAST_COMMIT_MESSAGE" value="Opprettelse av klassen Card" />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1625164757045">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="407" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.834@0.0.1536.834" timestamp="1625164757045" />
+    <state x="410" y="11" key="CommitChangelistDialog2" timestamp="1625165004908">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="410" y="11" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1625165004908" />
   </component>
 </project>
