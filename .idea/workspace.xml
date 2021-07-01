@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f089ab-6081-4d79-9b1f-9ef9a44346b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Value.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Values.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +63,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="407" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog/0.0.1536.834@0.0.1536.834" timestamp="1625164757045" />
+    <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser" timestamp="1625169440367">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1625169440367" />
     <state x="410" y="11" key="CommitChangelistDialog2" timestamp="1625165004908">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
