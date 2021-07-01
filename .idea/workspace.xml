@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f089ab-6081-4d79-9b1f-9ef9a44346b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Suit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Values.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Value.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Values.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
