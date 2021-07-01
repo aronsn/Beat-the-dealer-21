@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a6f089ab-6081-4d79-9b1f-9ef9a44346b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Blackjack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Suit.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Value.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,14 +86,21 @@
       <option name="presentableId" value="LOCAL−00003" />
       <updated>1625171678855</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL−00004" summary="Kontroll klassen Blackjack kan teste opprettelse av spillebunke">
+      <created>1625172183701</created>
+      <option name="number" value="LOCAL−00004" />
+      <option name="presentableId" value="LOCAL−00004" />
+      <updated>1625172183701</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Opprettelse av klassen Card" />
     <MESSAGE value="Deklarert attributter for klassen Card" />
     <MESSAGE value="Klassen deck har Attributtet cards, og en metode for å generere en bunke med kort, toString for å holde oversikt på hvor mange kort som blir generert" />
-    <option name="LAST_COMMIT_MESSAGE" value="Klassen deck har Attributtet cards, og en metode for å generere en bunke med kort, toString for å holde oversikt på hvor mange kort som blir generert" />
+    <MESSAGE value="Kontroll klassen Blackjack kan teste opprettelse av spillebunke" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kontroll klassen Blackjack kan teste opprettelse av spillebunke" />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1625164757045">
@@ -101,10 +111,26 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1625171016106" />
-    <state x="36" y="23" key="CommitChangelistDialog2" timestamp="1625171677488">
+    <state x="55" y="23" key="CommitChangelistDialog2" timestamp="1625172182361">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="36" y="23" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1625171677488" />
+    <state x="55" y="23" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1625172182361" />
+    <state width="767" height="220" key="GridCell.Tab.0.bottom" timestamp="1625179115672">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="767" height="220" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1625179115672" />
+    <state width="767" height="220" key="GridCell.Tab.0.center" timestamp="1625179115672">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="767" height="220" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1625179115672" />
+    <state width="767" height="220" key="GridCell.Tab.0.left" timestamp="1625179115672">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="767" height="220" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1625179115672" />
+    <state width="767" height="220" key="GridCell.Tab.0.right" timestamp="1625179115672">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="767" height="220" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1625179115672" />
     <state x="814" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1625171807324">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
