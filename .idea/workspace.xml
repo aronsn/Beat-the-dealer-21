@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f089ab-6081-4d79-9b1f-9ef9a44346b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Suit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Value.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Blackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Deck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +97,13 @@
       <option name="presentableId" value="LOCAL−00005" />
       <updated>1625179219203</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL−00006" summary="Vågale endringer i klassene Blackjack.java, Deck.java, Card.java. Gjenopprettet Suit.java og Value.java">
+      <created>1625261021201</created>
+      <option name="number" value="LOCAL−00006" />
+      <option name="presentableId" value="LOCAL−00006" />
+      <updated>1625261021201</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -109,7 +112,8 @@
     <MESSAGE value="Klassen deck har Attributtet cards, og en metode for å generere en bunke med kort, toString for å holde oversikt på hvor mange kort som blir generert" />
     <MESSAGE value="Kontroll klassen Blackjack kan teste opprettelse av spillebunke" />
     <MESSAGE value="Slettet klassene Suit.java og Value.java, endret klasseattributtene til klassen Card" />
-    <option name="LAST_COMMIT_MESSAGE" value="Slettet klassene Suit.java og Value.java, endret klasseattributtene til klassen Card" />
+    <MESSAGE value="Vågale endringer i klassene Blackjack.java, Deck.java, Card.java. Gjenopprettet Suit.java og Value.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vågale endringer i klassene Blackjack.java, Deck.java, Card.java. Gjenopprettet Suit.java og Value.java" />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1625164757045">
@@ -120,30 +124,30 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="538" y="118" key="#com.intellij.ide.util.MemberChooser/0.0.1536.834@0.0.1536.834" timestamp="1625259245236" />
-    <state x="55" y="23" key="CommitChangelistDialog2" timestamp="1625179218014">
+    <state x="55" y="23" key="CommitChangelistDialog2" timestamp="1625261020117">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="55" y="23" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1625179218014" />
+    <state x="55" y="23" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1625261020117" />
     <state x="933" y="172" key="FileChooserDialogImpl" timestamp="1625258425453">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="933" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1625258425453" />
-    <state width="768" height="218" key="GridCell.Tab.0.bottom" timestamp="1625260328995">
+    <state width="768" height="218" key="GridCell.Tab.0.bottom" timestamp="1625261968982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="768" height="218" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1625260328995" />
-    <state width="768" height="218" key="GridCell.Tab.0.center" timestamp="1625260328995">
+    <state width="768" height="218" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1625261968982" />
+    <state width="768" height="218" key="GridCell.Tab.0.center" timestamp="1625261968982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="768" height="218" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1625260328995" />
-    <state width="768" height="218" key="GridCell.Tab.0.left" timestamp="1625260328995">
+    <state width="768" height="218" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1625261968982" />
+    <state width="768" height="218" key="GridCell.Tab.0.left" timestamp="1625261968982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="768" height="218" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1625260328995" />
-    <state width="768" height="218" key="GridCell.Tab.0.right" timestamp="1625260328995">
+    <state width="768" height="218" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1625261968982" />
+    <state width="768" height="218" key="GridCell.Tab.0.right" timestamp="1625261968982">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="768" height="218" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1625260328995" />
+    <state width="768" height="218" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1625261968982" />
     <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1625223441654">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

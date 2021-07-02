@@ -12,6 +12,10 @@ public class Blackjack {
         //Oppretter spillebunken
         Deck playingDeck = new Deck();
         playingDeck.createFullDeck();
+        playingDeck.shuffle();
+
+        //Create a deck for the player
+
 
         System.out.println(playingDeck);
 
