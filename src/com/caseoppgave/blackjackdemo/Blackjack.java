@@ -1,5 +1,8 @@
 package com.caseoppgave.blackjackdemo;
 
+import java.util.List;
+import java.util.stream.IntStream;
+
 public class Blackjack {
     public static void main(String[] args) {
 
@@ -10,6 +13,13 @@ public class Blackjack {
         Deck playingDeck = new Deck();
         playingDeck.createFullDeck();
 
-        System.out.println((playingDeck));
+        System.out.println(playingDeck);
+
+
+
+
+
+
+
     }
 }

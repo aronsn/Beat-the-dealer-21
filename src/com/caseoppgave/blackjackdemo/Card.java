@@ -1,19 +1,28 @@
 package com.caseoppgave.blackjackdemo;
 
 
+import java.util.*;
+
 public class Card {
-    private int value;
-    private int suit;
+    private final Suit suit;
+    private final Value value;
 
-    public Card(int value, int suit) {
-        this.value = value;
+    public Card(Suit suit, Value value) {
         this.suit = suit;
+        this.value = value;
     }
-    public String toString() {
-        String[] values = {null, "Ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King"};
-        String[] suits = {"Clubs", "Diamonds", "Hearts", "Spades"};
-        String cardOutput = suits[this.suit] + values[this.value];
 
-        return cardOutput;
+    public Suit getSuit() {
+        return suit;
     }
+
+    public Value getValue() {
+        return value;
+    }
+
+    @Override
+    public String toString() {
+        return this.suit.toString() + "" + this.value.toString();
+    }
+
 }
