@@ -58,6 +58,63 @@ public class Deck {
         deck.removeCard(0);
     }
 
+    public int deckSize() {
+        return this.cards.size();
+    }
+
+    public void moveAllTodeck(Deck deck) {
+        int thisDeckSize = this.cards.size();
+
+        //Put cards into moveTo deck
+        for(int i = 0; i < thisDeckSize; i++) {
+            deck.addCard(this.getCard(i));
+        }
+
+        for(int i = 0; i < thisDeckSize; i++) {
+            this.removeCard(0);
+        }
+    }
+
+    //Returnerer den totale verdien av kort i en bunke
+    public int cardsValue() {
+        int totalValue = 0;
+        int aces = 0;
+
+        for(Card card : this.cards) {
+            switch(card.getValue()) {
+                case TWO : totalValue += 2;
+                    break;
+                case THREE: totalValue += 3;
+                    break;
+                case FOUR: totalValue += 4;
+                    break;
+                case FIVE: totalValue += 5;
+                    break;
+                case SIX: totalValue += 6;
+                    break;
+                case SEVEN: totalValue += 7;
+                    break;
+                case EIGHT: totalValue += 8;
+                    break;
+                case NINE: totalValue += 9;
+                    break;
+                case TEN: totalValue += 10;
+                    break;
+                case JACK: totalValue += 10;
+                    break;
+                case QUEEN: totalValue += 10;
+                    break;
+                case KING: totalValue += 10;
+                    break;
+                case ACE: totalValue += 11;
+                    break;
+
+            }
+        }
+
+        return totalValue;
+    }
+
     public String toString() {
         String cardListOutput = "";
 

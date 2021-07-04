@@ -22,6 +22,8 @@ public class Card {
 
     @Override
     public String toString() {
+
+
         return this.suit.toString() + "" + this.value.toString();
     }
 
