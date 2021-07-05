@@ -82,6 +82,7 @@ public class Deck {
 
         for(Card card : this.cards) {
             switch(card.getValue()) {
+
                 case TWO : totalValue += 2;
                     break;
                 case THREE: totalValue += 3;
@@ -116,11 +117,14 @@ public class Deck {
     }
 
     public String toString() {
-        String cardListOutput = "";
+        String strOfCards = "";
 
         for(Card card : this.cards) {
-            cardListOutput += "\n" + " " + card.toString();
+            strOfCards += card.toString() + ", ";
         }
+        //Fjerner siste komma'en
+        String cardListOutput = strOfCards.substring(0, strOfCards.length()-2);
+
         return cardListOutput;
     }
 }

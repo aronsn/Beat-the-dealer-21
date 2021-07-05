@@ -2,49 +2,107 @@ package com.caseoppgave.blackjackdemo;
 
 import java.util.List;
 import java.util.Scanner;
-import java.util.stream.IntStream;
 
 public class Blackjack {
     public static void main(String[] args) {
 
-        // Velkomst melding
-        System.out.println("Welcome to Blackjack");
-
-        //Oppretter spillebunken
+        //Oppretter spillebunken, spillere og inputobject
         Deck playingDeck = new Deck();
+
         playingDeck.createFullDeck();
         playingDeck.shuffle();
 
-        //Oppretter hånda for spilleren
+        // Presenterer bunken for spill
+        System.out.println(playingDeck.toString());
+
+        //Oppretter spillerene: Sam og Dealer
         Deck sam = new Deck();
         Deck dealer = new Deck();
 
-        sam.draw(playingDeck);
-        dealer.draw(playingDeck);
-        sam.draw(playingDeck);
-        dealer.draw(playingDeck);
+        Scanner userInput = new Scanner(System.in);
 
-        System.out.println("Sams:");
-        System.out.println(sam.toString());
+        System.out.println("\nDo want to run a game of Blackjack? (y)es or (n)o");
+        String play = userInput.nextLine();
 
-        System.out.println("Dealer:" + dealer.getCard(0).toString() + dealer.getCard(1).toString());
+        // Blackjack Start - Spilløkka
+        while (play.equals("y")) {
 
-        System.out.println("Dealer:");
-        System.out.println(dealer.toString());
+            // Løkke for å dele ut kort annen hver gang til hver spiller så lenge de har mindre enn 2 kort i hånden
+            while(sam.deckSize() < 2 && dealer.deckSize() < 2) {
+                sam.draw(playingDeck);
+                dealer.draw(playingDeck);
+
+                System.out.println("Sam: " + sam.toString() + " Dealer: " + dealer.toString() + "\n");
+            }
+
+            // Hvis både Sam og Dealer to starter med Blackjack, da går seier til Sam
+            if(sam.cardsValue() == 21 && dealer.cardsValue() == 21) {
+                System.out.println("[Sam] Sam: " + sam.toString() + " Dealer: " + dealer.toString());
+                break;
+            }
+
+            // Hvis både Sam og Dealer to starter med dobbel Ess, da går seier til Dealer
+            if(sam.cardsValue() == 22 && dealer.cardsValue() == 22) {
+                System.out.println("[Dealer] Sam: " + sam.toString() + " Dealer: " + dealer.toString());
+                break;
+
+            }
+
+            //Løkke for å gjennomføre flere runder med korttrekking
+            while(true) {
+                // Hvis hånda til Sam er mer enn 21, går seier til Dealer og om Dealer har Blackjack
+                if(sam.cardsValue() > 21 || dealer.cardsValue() == 21) {
+                    System.out.println("[Dealer] Sam: " + sam.toString() + " Dealer: " + dealer.toString());
+                    break;
+                }
+
+                // Hvis hånda til Dealer er mer enn 21, går seier til Sam og om Sam har Blackjack
+                if(dealer.cardsValue() > 21 || sam.cardsValue() == 21) {
+                    System.out.println("[Sam] Sam: " + sam.toString() + " Dealer: " + dealer.toString());
+                    break;
+                }
+
+                // Kontrollerer om totale verdien i hånda til Sam er mindre enn eller er lik 17.
+                // Hvis den ikke er det, skal han stoppe å trekke kort fra spillebunken.
+                // Når Sam stopper å trekke kort, da begynner dealer å trekke kort fra spillebunken
+                if(sam.cardsValue() < 17) {
+                    sam.draw(playingDeck);
+                    System.out.println("Sam: " + sam.toString() + " Dealer: " + dealer.toString() + "\n");
+
+                // Kontrollerer om dealer sin hånd er mindre enn Sam sin hånd.
+                // Hvis den er det, så skal Dealer slutte å trekke kort
+                } else if(dealer.cardsValue() < sam.cardsValue()) {
+                    dealer.draw(playingDeck);
+                    System.out.println("Sam: " + sam.toString() + " Dealer: " + dealer.toString() + "\n");
+                }
 
 
-        //Card aCard = new Card(Suit.DIAMOND, Value.EIGHT);
+                // Hvis både Sam og Dealer har sluttet å trekke kort. Da blir hånda til begge spillere kontrollert
+                // Den hånda som er nærmest 21, får denne rundens seier
+                if(dealer.cardsValue() < 21 && sam.cardsValue() < 21) {
+                    if(dealer.cardsValue() > sam.cardsValue()) {
+                        System.out.println("[Dealer] Sam: " + sam.toString() + " Dealer: " + dealer.toString());
+                        break;
+                    } else {
+                        System.out.println("[Sam] Sam: " + sam.toString() + " Dealer: " + dealer.toString());
+                        break;
+                    }
+                }
 
-        //System.out.println(aCard.getValue());
-        //System.out.println(Value.JACK.toString());
 
-        //Sytem.out.println(playingDeck);
+            }//Korttrekkingsrunder slutt
 
-
-
-
+            //Skriver ut den sammenlagte verdien i hver hånd
+            System.out.println("\nSam's hand: " + sam.cardsValue());
+            System.out.println("Dealer's hand: " + dealer.cardsValue());
 
 
+            sam.moveAllTodeck(playingDeck);
+            dealer.moveAllTodeck(playingDeck);
+
+            System.out.println("\nDo want to run a new game of Blackjack? (y)es or (n)o");
+            play = userInput.nextLine();
+        }// Blackjack slutt
 
     }
 }
