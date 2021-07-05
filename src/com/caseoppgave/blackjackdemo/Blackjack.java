@@ -5,21 +5,32 @@ import java.util.Scanner;
 
 public class Blackjack {
     public static void main(String[] args) {
+        Scanner userInput = new Scanner(System.in);
 
-        //Oppretter spillebunken, spillere og inputobject
+        System.out.println("Write a filename for the program to initialize a deck of cards: ");
+        String FILENAME = userInput.nextLine();
+
+        //Oppretter spillebunken, spillere
         Deck playingDeck = new Deck();
 
-        playingDeck.createFullDeck();
-        playingDeck.shuffle();
+        try {
+            playingDeck.createFullDeckFromFile(FILENAME);
+        } catch (Exception e) { }
 
-        // Presenterer bunken for spill
+        if(playingDeck.deckSize() == 0) {
+            System.out.println("\nDid not find file, initializing new deck of cards: ");
+            playingDeck.createFullDeck();
+            playingDeck.shuffle();
+        }
+
+
+        // Presenterer spillbunken
         System.out.println(playingDeck.toString());
 
         //Oppretter spillerene: Sam og Dealer
         Deck sam = new Deck();
         Deck dealer = new Deck();
 
-        Scanner userInput = new Scanner(System.in);
 
         System.out.println("\nDo want to run a game of Blackjack? (y)es or (n)o");
         String play = userInput.nextLine();
@@ -62,6 +73,8 @@ public class Blackjack {
                     break;
                 }
 
+
+
                 // Kontrollerer om totale verdien i hånda til Sam er mindre enn eller er lik 17.
                 // Hvis den ikke er det, skal han stoppe å trekke kort fra spillebunken.
                 // Når Sam stopper å trekke kort, da begynner dealer å trekke kort fra spillebunken
@@ -69,13 +82,13 @@ public class Blackjack {
                     sam.draw(playingDeck);
                     System.out.println("Sam: " + sam.toString() + " Dealer: " + dealer.toString() + "\n");
 
-                // Kontrollerer om dealer sin hånd er mindre enn Sam sin hånd.
-                // Hvis den er det, så skal Dealer slutte å trekke kort
+                    // Kontrollerer om dealer sin hånd er mindre enn Sam sin hånd.
+                    // Hvis den er det, så skal Dealer slutte å trekke kort
                 } else if(dealer.cardsValue() < sam.cardsValue()) {
                     dealer.draw(playingDeck);
                     System.out.println("Sam: " + sam.toString() + " Dealer: " + dealer.toString() + "\n");
-                }
 
+                }
 
                 // Hvis både Sam og Dealer har sluttet å trekke kort. Da blir hånda til begge spillere kontrollert
                 // Den hånda som er nærmest 21, får denne rundens seier
@@ -83,11 +96,12 @@ public class Blackjack {
                     if(dealer.cardsValue() > sam.cardsValue()) {
                         System.out.println("[Dealer] Sam: " + sam.toString() + " Dealer: " + dealer.toString());
                         break;
-                    } else {
+                    } else if(dealer.cardsValue() < sam.cardsValue()) {
                         System.out.println("[Sam] Sam: " + sam.toString() + " Dealer: " + dealer.toString());
                         break;
                     }
                 }
+
 
 
             }//Korttrekkingsrunder slutt

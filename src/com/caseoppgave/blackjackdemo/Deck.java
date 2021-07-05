@@ -1,9 +1,11 @@
 package com.caseoppgave.blackjackdemo;
 
+import java.io.BufferedReader;
 import java.util.*;
+import com.caseoppgave.hjelpeklasse.Filehandling;
 
 public class Deck {
-    //Instance variables
+    //Instanse variabler
     private ArrayList<Card> cards;
 
     //Konstruktøren
@@ -11,8 +13,34 @@ public class Deck {
         this.cards = new ArrayList<Card>();
     }
 
+    public void removeCard(int i) {
+        this.cards.remove(i);
+    }
+
+    public Card getCard(int i) {
+        return this.cards.get(i);
+    }
+
+    //
+    public void addCard(Card addCard) {
+        this.cards.add(addCard);
+    }
+
+    // Gir bunkens størrelse
+    public int deckSize() {
+        return this.cards.size();
+    }
+
+    // Trekker et kort fra toppen av bunken
+    public void draw(Deck deck) {
+        this.cards.add(deck.getCard(0));
+        deck.removeCard(0);
+    }
+
+
+
     public void createFullDeck() {
-        //Generer bunke
+        //Genererer bunke
         for(Suit suit : Suit.values()) {
             for(Value value : Value.values()) {
                 //Legger til nye kort
@@ -20,6 +48,38 @@ public class Deck {
             }// løkke - value
         }// løkke - suit
     }
+
+    // Metode for å lese fra fil og gjenopprette objekter
+    public void createFullDeckFromFile(String filename) {
+        // Passer på at ArrayList'en er tom
+        cards.clear();
+
+        try {
+            BufferedReader infile = Filehandling.createReadConnection(filename);
+            String searchCard = infile.readLine();
+            StringTokenizer tokenizer = new StringTokenizer(searchCard, ", ");
+            String card = tokenizer.nextToken();
+
+            while(card != "") {
+
+                String suitStr = card.substring(0, card.length()-1);
+                String valueStr = card.substring(1, card.length());
+
+                for( Suit suit : Suit.values()) {
+                        for(Value value : Value.values()) {
+                            if(suitStr.equals(suit.toString()) && valueStr.equals(value.toString())) {
+                                    this.cards.add(new Card(suit, value));
+                            }
+                        }// løkke for verdi
+                }// løkke for type
+
+                card = tokenizer.nextToken();
+
+            }// løkke for EOF
+
+        } catch(Exception e) { }
+    }
+
 
     public void shuffle() {
         ArrayList<Card> tempDeck = new ArrayList<Card>();
@@ -34,33 +94,13 @@ public class Deck {
             //Genererer tilfeldig indeks
             randomCardCardIndex = random.nextInt((this.cards.size() - 1 - 0) + 1) + 0;
             tempDeck.add(this.cards.get(randomCardCardIndex));
-            //Remove from original deck
+            //Fjerner fra orginal bunken
             this.cards.remove(randomCardCardIndex);
         }
         this.cards = tempDeck;
     }
 
-    public void removeCard(int i) {
-        this.cards.remove(i);
-    }
 
-    public Card getCard(int i) {
-        return this.cards.get(i);
-    }
-
-    public void addCard(Card addCard) {
-        this.cards.add(addCard);
-    }
-
-    //Trekker et kort fra bunken
-    public void draw(Deck deck) {
-        this.cards.add(deck.getCard(0));
-        deck.removeCard(0);
-    }
-
-    public int deckSize() {
-        return this.cards.size();
-    }
 
     public void moveAllTodeck(Deck deck) {
         int thisDeckSize = this.cards.size();
