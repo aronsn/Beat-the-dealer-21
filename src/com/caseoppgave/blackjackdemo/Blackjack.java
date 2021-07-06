@@ -73,8 +73,6 @@ public class Blackjack {
                     break;
                 }
 
-
-
                 // Kontrollerer om totale verdien i hånda til Sam er mindre enn eller er lik 17.
                 // Hvis den ikke er det, skal han stoppe å trekke kort fra spillebunken.
                 // Når Sam stopper å trekke kort, da begynner dealer å trekke kort fra spillebunken

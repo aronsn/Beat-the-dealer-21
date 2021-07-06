@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a6f089ab-6081-4d79-9b1f-9ef9a44346b6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/DeckOfCards.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/caseoppgave/hjelpeklasse/Filehandling.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Beat-the-dealer-21.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Beat-the-dealer-21.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Blackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/caseoppgave/blackjackdemo/Deck.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +39,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
@@ -52,7 +57,7 @@
       <recent name="C:\Users\aron\Documents\Beat-the-dealer-21\src\com\caseoppgave\hjelpeklasse" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in Beat-the-dealer-21">
     <configuration name="Blackjack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.caseoppgave.blackjackdemo.Blackjack" />
       <module name="Beat-the-dealer-21" />
@@ -66,8 +71,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in Beat-the-dealer-21" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Beat-the-dealer-21" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in Beat-the-dealer-21" />
         <item itemvalue="Application.Blackjack" />
       </list>
     </recent_temporary>
@@ -137,7 +151,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1625446213985</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Filbehandling ferdiglagd, små justeringer på logikken i Blackjack.java.">
+      <created>1625464600365</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1625464600365</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,7 +170,8 @@
     <MESSAGE value="Nye metoder i klassen Deck.java" />
     <MESSAGE value="Endringer i klassene Card.java, Suit.java, Value.java. Lagt til noe utskrifter i Blackjack.java." />
     <MESSAGE value="Klassen Blackjack.java har alle reglene på plass, og ferdig modellert spill. Små endringer i Value.java, og Deck.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Klassen Blackjack.java har alle reglene på plass, og ferdig modellert spill. Små endringer i Value.java, og Deck.java" />
+    <MESSAGE value="Filbehandling ferdiglagd, små justeringer på logikken i Blackjack.java." />
+    <option name="LAST_COMMIT_MESSAGE" value="Filbehandling ferdiglagd, små justeringer på logikken i Blackjack.java." />
   </component>
   <component name="WindowStateProjectService">
     <state x="407" y="104" key="#com.intellij.ide.fileTemplates.ui.ConfigureTemplatesDialog" timestamp="1625164757045">
@@ -205,14 +226,18 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state width="1537" height="274" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1625454644787" />
-    <state x="277" y="59" key="SettingsEditor" timestamp="1625451390041">
+    <state x="277" y="0" key="SettingsEditor" timestamp="1625567526834">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="277" y="59" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1625451390041" />
+    <state x="277" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1625567526834" />
     <state x="849" y="241" key="com.intellij.ide.util.TipDialog" timestamp="1625223441654">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="849" y="241" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1625223441654" />
+    <state x="526" y="310" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1625567509205">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="526" y="310" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1536.834@0.0.1536.834" timestamp="1625567509205" />
     <state x="345" y="153" width="846" height="602" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1625454593837">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
