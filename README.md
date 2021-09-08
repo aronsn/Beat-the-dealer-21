@@ -1,10 +1,7 @@
-# Beat-the-dealer-21
-**Teknisk oppgave**
 
 # Can you beat the dealer at 21? 
 
-
-Model the game 
+**Model the game**
 
 • create a single deck of playing cards 
 
