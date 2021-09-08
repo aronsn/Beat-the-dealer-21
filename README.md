@@ -1,5 +1,5 @@
 # Beat-the-dealer-21
-Teknisk oppgave
+##Teknisk oppgave
 
 Can you beat the dealer at 21? 
 
