@@ -10,7 +10,7 @@
 • each player is given two cards from the top of a shuffled deck of cards. Cards  are given in the following order: [sam, dealer, sam, dealer] 
 
 
-Rules to implement 
+**Rules to implement:** 
 
 • determine score of a hand[1] 
 
@@ -37,7 +37,7 @@ Rules to implement
 [1] Numbered cards are their point value. Jack, Queen and King count as 10 and Ace  counts as 11. 
 
 
-Input 
+**Input** 
 
 The game should be able to read a file containing a deck of cards, taking the  reference to the file as a command 
 line argument, as a starting point. If no file is  provided, a new shuffled deck of 52 unique cards should be initialized. 
@@ -63,7 +63,7 @@ K: King
 A: Ace 
 
 
-Output 
+**Output** 
 
 At the end, the solution should print the name of the winner to standard out, together  with the hands of both sam and the dealer. Using the following format: 
 
@@ -72,7 +72,7 @@ sam: card1, card2,..., cardN
 dealer: card1, card2,..., cardN 
 
 
-Example 
+**Example** 
 
 When supplied with the following cardlist: 
 
@@ -86,7 +86,7 @@ sam: CA, H9
 dealer: D5, HQ, S8 
 
 
-Testing 
+**Testing**
 
 The solution should include tests.
 
